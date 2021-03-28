@@ -1,0 +1,23 @@
+2021-02-01 21:15:39,415 INFO c.u.p.PrimeiroProjetoSpringBatchApplication [main] Starting PrimeiroProjetoSpringBatchApplication using Java 15.0.1 on DESKTOP-5FD29JF with PID 17772 (C:\Users\fabio\workspace-spring-tool-suite\PrimeiroProjetoSpringBatch\target\classes started by fabio in C:\Users\fabio\workspace-spring-tool-suite\PrimeiroProjetoSpringBatch)
+2021-02-01 21:15:39,417 INFO c.u.p.PrimeiroProjetoSpringBatchApplication [main] No active profile set, falling back to default profiles: default
+2021-02-01 21:15:39,735 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2021-02-01 21:15:39,916 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2021-02-01 21:15:40,165 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-02-01 21:15:40,211 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2021-02-01 21:15:40,317 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2021-02-01 21:15:40,380 INFO c.u.p.PrimeiroProjetoSpringBatchApplication [main] Started PrimeiroProjetoSpringBatchApplication in 1.252 seconds (JVM running for 1.97)
+2021-02-01 21:15:40,456 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=imprimeOlaJob]] launched with the following parameters: [{run.id=18, nome=pinho}]
+2021-02-01 21:15:40,487 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [imprimeOlaStep]
+2021-02-01 21:15:40,508 INFO o.s.b.c.s.AbstractStep [main] Step: [imprimeOlaStep] executed in 20ms
+2021-02-01 21:15:40,522 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [imprimeOlaSegundoStep]
+2021-02-01 21:15:40,536 INFO o.s.b.c.s.AbstractStep [main] Step: [imprimeOlaSegundoStep] executed in 13ms
+2021-02-01 21:15:40,560 INFO o.s.b.c.j.SimpleStepHandler [main] Duplicate step [imprimeOlaSegundoStep] detected in execution of job=[imprimeOlaJob]. If either step fails, both will be executed again on restart.
+2021-02-01 21:15:40,567 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [imprimeOlaSegundoStep]
+2021-02-01 21:15:40,579 INFO o.s.b.c.s.AbstractStep [main] Step: [imprimeOlaSegundoStep] executed in 11ms
+2021-02-01 21:15:40,588 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=imprimeOlaJob]] completed with the following parameters: [{run.id=18, nome=pinho}] and the following status: [COMPLETED] in 114ms
+2021-02-01 21:15:40,603 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=imprimeParImparJob]] launched with the following parameters: [{run.id=18, nome=pinho}]
+2021-02-01 21:15:40,613 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [imprimeParImparStep1]
+2021-02-01 21:15:40,632 INFO o.s.b.c.s.AbstractStep [main] Step: [imprimeParImparStep1] executed in 19ms
+2021-02-01 21:15:40,639 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=imprimeParImparJob]] completed with the following parameters: [{run.id=18, nome=pinho}] and the following status: [COMPLETED] in 32ms
+2021-02-01 21:15:40,642 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-02-01 21:15:40,646 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
